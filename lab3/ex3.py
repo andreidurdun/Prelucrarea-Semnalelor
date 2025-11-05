@@ -10,6 +10,7 @@ plt.plot(t, x)
 plt.savefig("ex3f1.pdf", format='pdf')
 plt.show()
 
+#DFT
 n = len(t)
 X = []  
 for i in range(n):
