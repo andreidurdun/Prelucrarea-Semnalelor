@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 A = 1.0          # amplitudine
 phi = 0.0        # faza
-fc = 10       # frecventa semnalului de baza
-fs = 5    
+fc = 20      # frecventa semnalului de baza
+fs = 30 # sub nyquist   
 
 t_cont = np.linspace(0, 1, 1000, endpoint=False)
 t_samp = t_samp = np.arange(0, 1, 1/fs)

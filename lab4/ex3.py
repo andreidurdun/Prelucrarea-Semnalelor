@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 A = 1.0          # amplitudine
 phi = 0.0        # faza
-fc = 10       # frecventa semnalului de baza
-fs = 50    # frecventa de esantionare 
+fc = 20       # frecventa semnalului de baza
+fs = 50    
 t_max = 1    
 
 
@@ -13,10 +13,10 @@ t_cont = np.linspace(0, 1, 1000, endpoint=False)
 t_samp = np.arange(0, 1, 1/fs)
 
 
-f1 = 5
-f2 = 10
-f3 = 15
-f4 = 20
+f1 = fc
+f2 = fc + fs
+f3 = fc + 2*fs
+f4 = fc + 3*fs
 
 signals = [
     (f1, "blue"),
