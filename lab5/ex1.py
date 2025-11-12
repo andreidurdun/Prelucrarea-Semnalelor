@@ -159,17 +159,9 @@ def i():
     fc = 1.0 / (24 * 3600.0) # frecv pt 24h
 
     plt.figure(figsize=(10, 5))
-    plt.plot(f, X, label='Spectrul Semnalului (fara DC)')
+    plt.plot(f[f<fc], X[f<fc])
     
-    plt.axvline(x=fc, color='red', linestyle='--', label=f'1 Ciclu/Zi ({fc:.8f} Hz)')
-    
-    plt.xlabel('Frecventa')
-    plt.ylabel('Amplitudine')
-    
-    #plt.xlim(0, fc * 4) 
-    plt.legend()
-    plt.grid(True, alpha=0.3)
-    plt.tight_layout()
+
     
     plt.savefig("lab5/i.pdf", format='pdf')
     plt.show()
